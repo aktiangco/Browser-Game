@@ -1,11 +1,22 @@
+
+*{
+  margin: 5;
+}
+body {
+  background: black;
+  color: rgb(100, 241, 163);
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
 /* Scoreboard and Timer */
 header {
     display: flex;
-    padding: 5px;
+    padding: 2px;
     background-color: #3e3a3a;
-    color: azure;
+    color: rgb(100, 241, 163);
     align-items: center;
-    max-width: 100%;
+    width: 1000px;
 }
 .score {
     display: row;
@@ -22,3 +33,8 @@ header {
     flex-grow: inherit;
 }
 
+/* creating a game box */
+canvas {
+  
+  border: 1px solid white;
+}

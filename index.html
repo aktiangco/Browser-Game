@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browser Game</title>
-    <script src="./index.js"></script>
-    <link rel="stylesheet" href="./style.css">
+    <title>Browser Game</title> 
+    <link rel="stylesheet" href="./asset/style.css">
 </head>
 <body>
     <h1>Frogger Clone</h1>
+    <!--Score, Top-Score & Timer-->
     <header>
         <div class="score">
             <h2>Score</h2>
@@ -21,9 +22,16 @@
         </div>
         <div class="timer">
             <h2>Timer</h2>
-             <h3>clock<h3>
-        </div>
     </header>
-    <canvas> </canvas>
+    <main>
+        <!--Game area-->
+        <canvas width="1000" height="700"></canvas>
+    </main>
+   
+    <!--javascript links -->
+    <script src="./js/index.js"></script>
+    <script src="./js/timer.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/background.js"></script>
 </body>
 </html>
