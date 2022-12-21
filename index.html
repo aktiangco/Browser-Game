@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onclick="jump()">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,29 +9,27 @@
     <link rel="stylesheet" href="./asset/style.css">
 </head>
 <body>
-    <h1>Turtle Crossing</h1>
+    <h1>Evasive Rocket Jump</h1>
     <!--Score, Top-Score & Timer-->
     <header>
         <div class="score">
             <h2>Score</h2>
-            <h3>board<h3>
+            <h3 id="score"></h3>
         </div>
         <div class="top-score">
             <h2>Top Score</h2>
             <h3>highest score</h3>
         </div>
-        <div class="timer">
-            <h2>Timer</h2>
     </header>
-    <main>
-        <!--Game area-->
-        <canvas width="1000" height="700"></canvas>
+    <!--Game area-->
+    <main id="game">
+        <!--Characters-->
+        <img id="mech" src="./asset/pics/mecha.gif">
+        <img id="rocket" src="./asset/pics/rocket1.gif">
     </main>
    
     <!--javascript links -->
     <script src="./js/index.js"></script>
-    <script src="./js/timer.js"></script>
-    <script src="./js/move.js"></script>
-    <script src="./js/background.js"></script>
+    <script src="./js/jump.js"></script>
 </body>
 </html>
