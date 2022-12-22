@@ -1,7 +1,8 @@
 // Grabbing element in the HTML
 const character = document.getElementById("mech"); 
 const block = document.getElementById("rocket");
-const score = document.getElementById("score")
+const score = document.getElementById("score");
+const refresh = document.getElementById("refresh");
 
 
 

@@ -61,7 +61,7 @@ header {
   width: 80px;
   height: 80px;
   position: relative;
-  top: 280px;
+  top: 240px;
   left: 900px;
   animation: block 2s infinite linear;
 }
@@ -69,4 +69,21 @@ header {
 @keyframes block{
   0%{left: 900px;}
   100%{left:-100px;}
+}
+
+
+
+#enemy {
+  background-color: transparent;
+  transform: rotate(270deg);
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 280px;
+  left: 900px;
+  animation: block 4s infinite linear;
+}
+@keyframes block{
+  0%{left: 900px;}
+  100%{left:-200px;}
 }
