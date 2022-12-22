@@ -9,6 +9,7 @@ body {
   
 }
 /* Scoreboard */
+
 header {
     display: flex;
     padding: 2px;
@@ -19,22 +20,11 @@ header {
     height: 70px;
     border: 1px solid white;
 }
-.score {
-    display: row;
+.score, .highScores, .instruction {
     align-items: center;
     flex-grow: 1;
 }
-.highScores {
-    display: row;
-    align-items: center;
-    flex-grow: 1;
-}
-.instruction {
-  display: row;
-  align-items: center;
-  flex-grow: 1;
 
-}
 #score {
   width: 100px;
   height: 30px;
