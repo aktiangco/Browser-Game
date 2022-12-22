@@ -1,5 +1,5 @@
 // Creating a jump function
-function jump() {
+jump = () => {
     if (character.classList != "animate") {
         character.classList.add("animate");
     }

@@ -29,6 +29,10 @@ header {
     align-items: center;
     flex-grow: 1;
 }
+.refresh {
+  display: none;
+  
+}
 
 /* Play Area, Character & obstacle */
 #game {

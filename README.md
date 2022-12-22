@@ -1,7 +1,7 @@
 # Browser-Game
 
-(Evasive Manuever)
- -Scoring system
- -Hit a rocket, lose a life
- -hit an car, you lose
+(Mecha jump)
+ -Up & Down Arrow or mouse click to jump
+ -Hit a rocket and you'll lose
+ -get the high score
 
