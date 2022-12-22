@@ -13,6 +13,7 @@ const checkHit = setInterval(() => {
         block1.style.animation = "none";
         block1.style.display = "none";
         block2.style.display = "none";
+        hitElement.style.display = "none";
         swal("you lost", "Try Again?", "error");
     }
 }, 10);
