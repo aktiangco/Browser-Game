@@ -16,9 +16,10 @@ function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '38') {
         jump();
+        addHit(); // codes located in score.js
     }
     // To activate Refresh in index.js line #19
     if (e.keyCode == '40') {
-        refresh() 
+        refresh() // code located in index.js
     }
 }

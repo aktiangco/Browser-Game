@@ -1,11 +1,6 @@
 // score system
 var hits = 0;
 const hitElement = document.querySelector( '.hits' );
-document.body.onkeyup = function(e) {
-  if( e.keyCode == '38' ) {
-    addHit();
-  }
-}
 const addHit = () => {
     hits++;
   renderHits();
