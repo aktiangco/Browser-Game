@@ -6,14 +6,14 @@ document.body.onkeyup = function(e) {
     addHit();
   }
 }
-const addHit = function() {
-  hits++;
+const addHit = () => {
+    hits++;
   renderHits();
 }
-const renderHits = function() {
+const renderHits = () => {
   hitElement.innerHTML = hits;
 }
-const resetHits = function() {
+const resetHits = () => {
   hits = 0;
   renderHits();
 }
@@ -31,15 +31,6 @@ function showHighScores() {
       .map((score) => `<li>${score.score} - ${score.name}`)
       .join('');
 };
-// to display HighScore
-function showHighScores() {
-    const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-    const highScoreList = document.getElementById('highScores');
-  
-    highScoreList.innerHTML = highScores
-      .map((score) => `<li>${score.score} - ${score.name}`)
-      .join('');
-  }
   
   function checkHighScore(score) {
     const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
