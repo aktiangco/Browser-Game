@@ -1,16 +1,25 @@
-// To Do! score system
-let accountValues = {
-    score: 0
-  };
-  
-  showHighScores();
-  
-  function addEventListener() {
-    document.removeEventListener('keydown', handleKeyPress);
-    document.addEventListener('keydown', handleKeyPress);
+// score system
+var hits = 0;
+const hitElement = document.querySelector( '.hits' );
+document.body.onkeyup = function(e) {
+  if( e.keyCode == '38' ) {
+    addHit();
   }
-  
-////////////////
+}
+const addHit = function() {
+  hits++;
+  renderHits();
+}
+const renderHits = function() {
+  hitElement.innerHTML = hits;
+}
+const resetHits = function() {
+  hits = 0;
+  renderHits();
+}
+
+
+//////////////// to do still
 
 // Save HighScore  
 function showHighScores() {

@@ -6,6 +6,7 @@ body {
   justify-content: center;
   padding: 40px;
   margin-top: -20px;
+  
 }
 /* Scoreboard */
 header {
@@ -31,10 +32,14 @@ header {
 .instruction {
   display: row;
   align-items: center;
-  padding: 5px;
-  margin: 5px;
   flex-grow: 1;
 
+}
+#score {
+  width: 100px;
+  height: 30px;
+  align-items: center;
+ 
 }
 
 /* Play Area, Character & obstacle */

@@ -4,6 +4,7 @@ const block1 = document.getElementById("rocket");
 const block2 = document.getElementById("enemy");
 
 
+
 //Collision Detection
 const checkHit = setInterval(() => {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -12,7 +13,7 @@ const checkHit = setInterval(() => {
         block1.style.animation = "none";
         block1.style.display = "none";
         block2.style.display = "none";
-        alert("You Died!");  
+        swal("you lost", "Try Again?", "error");
     }
 }, 10);
 

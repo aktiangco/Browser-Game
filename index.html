@@ -8,19 +8,19 @@
     <title>Browser Game</title> 
     <link rel="stylesheet" href="./asset/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <h1>Mecha Jump</h1>
     <!--Score, Top-Score & Game instruction -->
     <header>
         <div class="score">
-            <h2>Score</h2>
-            <h3 id="score"></h3>
+            <h2 id="score">Score:<span class="hits">0</span></h2>
         </div>
         <!--HighScores Display, function located in score.js-->
         <div class="highScores">
-            <h2>HIGH SCORES</h2>
-            <ol id=”highScores”></ol>
+            <h2>HIGH SCORE:<span id=”highScores”></span></h2>
+            
         </div>
         <div class="instruction">
             <p>Arrow Up = Jump</p>
@@ -33,8 +33,10 @@
         <img id="mech" src="./asset/pics/mecha.gif">
         <img id="rocket" src="./asset/pics/rocket1.gif">
         <img id="enemy" src="./asset/pics/enemy.gif"> 
-    </main>
-
+</main>
+<audio>
+<source src="./asset/music/tunetank.com_5072_inspire_by_creativemediass.mp3" type="audio/mpeg">
+</audio>
     <!--javascript links -->
     <script src="./js/index.js"></script>
     <script src="./js/jump.js"></script>
