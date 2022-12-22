@@ -17,6 +17,7 @@ header {
     color: white;
     align-items: center;
     width: 896px;
+    height: 90px;
     border: 1px solid white;
 }
 .score {
@@ -65,8 +66,7 @@ header {
 
 /* Objects  */
 #rocket, #enemy {
-  background-color: transparent;
-  transform: rotate(270deg);
+  background-color: transparent; 
   width: 80px;
   height: 80px;
   position: relative;
@@ -75,6 +75,7 @@ header {
 
 #rocket {
   top: 240px;
+  transform: rotate(270deg);
   animation: block 2s infinite linear;
 }
 #enemy {

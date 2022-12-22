@@ -1,7 +1,8 @@
 // Grabbing element in the HTML
 const character = document.getElementById("mech"); 
-const block = document.getElementById("rocket", "enemy");
-const score = document.getElementById("score");
+const block = document.getElementById("rocket");
+
+
 
 
 //Collision Detection
