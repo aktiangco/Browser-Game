@@ -2,9 +2,6 @@
 const character = document.getElementById("mech"); 
 const block = document.getElementById("rocket", "enemy");
 const score = document.getElementById("score");
-const refresh = document.getElementById("refresh");
-
-
 
 
 //Collision Detection
@@ -14,10 +11,14 @@ const checkHit = setInterval(() => {
     if (blockLeft < 50 && blockLeft > 20 && characterTop >=230) {
         block.style.animation = "none";
         block.style.display = "none";
-        alert("You Lose!");  
+        alert("You Died!");  
     }
 }, 10);
 
 // To Do! create a refresh function using a "Space bar"
+function refresh() {
+    window.location.reload();
+};
 
-// To Do! 
+// To Do! score system
+

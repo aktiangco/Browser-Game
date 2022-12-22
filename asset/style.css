@@ -16,7 +16,7 @@ header {
     background: #3e3a3a;
     color: white;
     align-items: center;
-    width: 895px;
+    width: 896px;
     border: 1px solid white;
 }
 .score {
@@ -29,9 +29,12 @@ header {
     align-items: center;
     flex-grow: 1;
 }
-.refresh {
-  display: none;
-  
+.instruction {
+  display: row;
+  padding: 5px;
+  margin: 5px;
+  flex-grow: 1;
+
 }
 
 /* Play Area, Character & obstacle */
@@ -59,34 +62,26 @@ header {
   70%{top:100px;}
   100%{top:265px;}
 }
-#rocket {
+
+/* Objects  */
+#rocket, #enemy {
   background-color: transparent;
   transform: rotate(270deg);
   width: 80px;
   height: 80px;
   position: relative;
-  top: 240px;
   left: 900px;
+}
+
+#rocket {
+  top: 240px;
   animation: block 2s infinite linear;
 }
-/* Animations for moving to the left */
-@keyframes block{
-  0%{left: 900px;}
-  100%{left:-100px;}
-}
-
-
-
 #enemy {
-  background-color: transparent;
-  transform: rotate(270deg);
-  width: 80px;
-  height: 80px;
-  position: relative;
   top: 280px;
-  left: 900px;
   animation: block 4s infinite linear;
 }
+/* Animations for moving to the left */
 @keyframes block{
   0%{left: 900px;}
   100%{left:-200px;}
