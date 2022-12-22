@@ -10,16 +10,16 @@ jump = () => {
 
 
 
-//  Creating a jump function using the up and down arrow keys
+//  Creating a jump function using the keyCode
 document.onkeydown = checkKey;
 function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '38') {
-        jump();
-        addHit(); // codes located in score.js
+        jump(); // invoke codes above
+        addHit(); // invoke codes located in score.js
     }
     // To activate Refresh in index.js line #19
     if (e.keyCode == '40') {
-        refresh() // code located in index.js
+        refresh() // invoke code located in index.js
     }
 }
