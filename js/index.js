@@ -19,7 +19,7 @@ const checkHit = setInterval(() => {
     }
 }, 10);
 
-// To Do! create a refresh function using a "Down Arrow"
+// To Do! create a refresh function using a "Space Bar"
 function refresh() {
     window.location.reload();
 };

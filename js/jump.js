@@ -14,12 +14,12 @@ jump = () => {
 document.onkeydown = checkKey;
 function checkKey(e) {
     e = e || window.event;
-    if (e.keyCode == '38') {
+    if (e.keyCode == '38', '40') {
         jump(); // invoke codes above
         addHit(); // invoke codes located in score.js
     }
     // To activate Refresh in index.js line #19
-    if (e.keyCode == '40') {
+    if (e.keyCode == '32') {
         refresh() // invoke code located in index.js
     }
 }
