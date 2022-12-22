@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browser Game</title> 
     <link rel="stylesheet" href="./asset/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Mecha Jump</h1>
-    <!--Score, Top-Score & Timer-->
+    <!--Score, Top-Score & Game instruction -->
     <header>
         <div class="score">
             <h2>Score</h2>
             <h3 id="score"></h3>
         </div>
-        <div class="top-score">
-            <h2>Top Score</h2>
-            <h3>highest score</h3>
+        <!--HighScores Display, function located in score.js-->
+        <div class="highScores">
+            <h2>HIGH SCORES</h2>
+            <ol id=”highScores”></ol>
         </div>
         <div class="instruction">
             <p>Arrow Up = Jump</p>
@@ -32,12 +33,11 @@
         <img id="mech" src="./asset/pics/mecha.gif">
         <img id="rocket" src="./asset/pics/rocket1.gif">
         <img id="enemy" src="./asset/pics/enemy.gif"> 
-    
     </main>
    
     <!--javascript links -->
     <script src="./js/index.js"></script>
     <script src="./js/jump.js"></script>
-
+    <script src="./js/score.js"></script>
 </body>
 </html>
