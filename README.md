@@ -8,3 +8,7 @@
  -Enemy Mech for distraction
  -get the high score
 
+play this game here
+    <form action="https://aktiangco.github.io/BrowserGame/">
+        <input type="Play here" value="Go to Google" />
+    </form>
