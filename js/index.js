@@ -4,9 +4,9 @@ const rocket = document.getElementById("rocket");
 const enemy = document.getElementById("enemy");
 
 //sounds effects
-const jumpSound = new Audio('assets/sounds/jump.mp3');
-const hitSound = new Audio('assets/sounds/explosion.ogg');
-const music = new Audio('assets/sounds/music.mp3'); 
+const jumpSound = new Audio('asset/sounds/jump.mp3');
+const hitSound = new Audio('asset/sounds/explosion.ogg');
+const music = new Audio('asset/sounds/music.mp3'); 
 music.loop = true;
 music.volume = 0.5;
 music.play();
