@@ -14,7 +14,7 @@ const checkHit = setInterval(() => {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let rocketLeft = parseInt(window.getComputedStyle(rocket).getPropertyValue("left"));
     let enemyLeft = parseInt(window.getComputedStyle(enemy).getPropertyValue("left"));
-    if ((rocketLeft < 70 && rocketLeft > 10 && characterTop >= 230) || (enemyLeft < 30 && enemyLeft > 0 && characterTop >= 230)) {
+    if ((rocketLeft < 60 && rocketLeft > 0 && characterTop >= 230) || (enemyLeft < 30 && enemyLeft > 0 && characterTop >= 230)) {
             // working on HighScore feature
         let currentHighScore = localStorage.getItem(HIGHEST_SCORE);
             // Setting high score in local storage
