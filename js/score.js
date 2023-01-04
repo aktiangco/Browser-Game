@@ -1,18 +1,29 @@
 // score system
-var hits = 0;
-const scoreElement = document.querySelector( '.hits' );
+let counter = 0;
+const HIGHEST_SCORE = 'Highest Score';
+
+const scoreElement = document.querySelector('.scores');
 const addHit = () => {
-    hits++;
+    counter++;
     renderHits();
 };
 const renderHits = () => {
-    scoreElement.innerHTML = hits;
+    scoreElement.innerHTML = counter;
 };
 const resetHits = () => {
-    hits = 0;
+    counter = 0;
     renderHits();
 };
 
+// still working on the HIGHSCORE feature
+// Highest score local storage
+let highScore = localStorage.getItem(HIGHEST_SCORE)
+if (!highScore) {
+    localStorage.setItem(HIGHEST_SCORE, 0);
+}
 
-// To Do Save HighScore  
-const highScore = document.querySelector('.highScore');
+let highestScoreLocal = document.querySelector('.highScore');
+highestScoreLocal.textContent = `High Score: ${localStorage.getItem(HIGHEST_SCORE)}`;
+highestScoreLocal.classList.add("high-score");
+game.appendChild(highestScoreLocal);
+

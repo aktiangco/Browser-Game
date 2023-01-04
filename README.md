@@ -10,3 +10,6 @@ Objective of the game
 - Enter Button to get rid of Alert(You Died!)
 
 - [Play here](https://aktiangco.github.io/BrowserGame/)
+
+
+ref. https://www.youtube.com/watch?v=bG2BmmYr9NQ
