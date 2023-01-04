@@ -70,11 +70,11 @@ header {
 #rocket {
   top: 240px;
   transform: rotate(270deg);
-  animation: block 3s infinite linear;
+  animation: block 2s infinite linear;
 }
 #enemy {
   top: 270px;
-  animation: block 2s infinite linear;
+  animation: block 3s infinite linear;
 }
 #ship {
   background-color: transparent; 
