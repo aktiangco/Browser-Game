@@ -3,8 +3,8 @@
 (Mecha jump)
 Objective of the game
 - Down Arrow Button to Refresh Page
-- Hit a rocket and you die
-- Enemy Mech for distraction
+- Hit a Objects and you die
+- SpaceShip for distraction
 - get the high score
 - Up Arrow Button to jump
 - Enter Button to get rid of Alert(You Died!)
