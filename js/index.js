@@ -23,7 +23,7 @@ const checkHit = setInterval(() => {
             // Setting high score in local storage
             if (!currentHighScore || currentHighScore < counter) {
                 localStorage.setItem(HIGHEST_SCORE, counter)
-                highestScoreLocal.textContent = (`High Score: ${localStorage.getItem(HIGHEST_SCORE)}`);;
+                highestScoreLocal.textContent = `High Score: ${localStorage.getItem(HIGHEST_SCORE)};`;
         }    
         
         // Music pause when game ended
