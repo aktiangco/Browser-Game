@@ -12,4 +12,4 @@ Objective of the game
 - [Play here](https://aktiangco.github.io/BrowserGame/)
 
 
-ref. https://www.youtube.com/watch?v=bG2BmmYr9NQ
+My main resource to create this game https://www.youtube.com/watch?v=bG2BmmYr9NQ

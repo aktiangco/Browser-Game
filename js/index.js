@@ -8,6 +8,7 @@ const jumpSound = new Audio('asset/sounds/jump.mp3');
 const hitSound = new Audio('asset/sounds/explosion.ogg');
 const music = new Audio('asset/sounds/music.mp3'); 
 music.loop = true;
+
 music.volume = 0.5;
 music.play();
 
@@ -22,8 +23,9 @@ const checkHit = setInterval(() => {
             // Setting high score in local storage
             if (!currentHighScore || currentHighScore < counter) {
                 localStorage.setItem(HIGHEST_SCORE, counter)
-                highestScoreLocal.textContent = `High Score: ${localStorage.getItem(HIGHEST_SCORE)}`;
+                highestScoreLocal.textContent = (`High Score: ${localStorage.getItem(HIGHEST_SCORE)}`);;
         }    
+        
         // Music pause when game ended
         jumpSound.pause();
         music.pause();

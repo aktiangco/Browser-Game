@@ -1,6 +1,7 @@
 // score system
 let counter = 0;
-const HIGHEST_SCORE = 'Highest Score';
+let HIGHEST_SCORE = 'Highest Score';
+
 
 const scoreElement = document.querySelector('.scores');
 const addHit = () => {
@@ -15,7 +16,7 @@ const resetHits = () => {
     renderHits();
 };
 
-// still working on the HIGHSCORE feature
+// still working on the HighScore feature
 // Highest score local storage
 let highScore = localStorage.getItem(HIGHEST_SCORE)
 if (!highScore) {
@@ -23,7 +24,8 @@ if (!highScore) {
 }
 
 let highestScoreLocal = document.querySelector('.highScore');
-highestScoreLocal.textContent = `High Score: ${localStorage.getItem(HIGHEST_SCORE)}`;
+highestScoreLocal.textContent = (`High Score: ${localStorage.getItem(HIGHEST_SCORE)}`);;
 highestScoreLocal.classList.add("high-score");
 game.appendChild(highestScoreLocal);
 
+//(High Score: ${localStorage.getItem(HIGHEST_SCORE)};)  try (High Score: ${localStorage.getItem(HIGHEST_SCORE)};;) 
