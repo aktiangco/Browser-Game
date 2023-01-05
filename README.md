@@ -2,12 +2,12 @@
 
 (Mecha jump)
 Objective of the game
-- Down Arrow Button to Refresh Page
 - Hit a Objects and you die
 - SpaceShip for distraction
 - get the high score
-- Up Arrow Button to jump
+- Up & DownArrow Button to jump
 - Enter Button to get rid of Alert(You Died!)
+- Space Bar to Refresh Page
 
 - [Play here](https://aktiangco.github.io/BrowserGame/)
 
