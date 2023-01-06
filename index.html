@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-<body>
+<body id="body">
     <h1>Mecha Jump</h1>
     <p>Simple Browser Game</p>
     <!--Score, Top-Score & Game instruction -->
@@ -19,8 +19,8 @@
             <h2 id="score">Score:<span class="scores">0</span></h2>
         </div>
         <!--HighScores Display, function located in score.js-->
-        <div class="highScores">
-            <h2>HIGH SCORE:<span class=”highScores”>0</span></h2>
+        <div class="highScore">
+            <h2 id="highScores">HIGH SCORE:<span class=”highScore”>0</span></h2>
             
         </div>
         <div class="instruction">
@@ -31,10 +31,10 @@
     <!--Game area-->
     <main id="game">
         <!--Characters-->
-        <img id="mech" src="./asset/pics/mecha.gif">
-        <img id="rocket" src="./asset/pics/rocket1.gif">
-        <img id="enemy" src="./asset/pics/enemy.gif"> 
-        <img id="ship" src="./asset/pics/ship.gif">
+        <img id="mech" src="./asset/pics/mecha.gif" alt="mecha">
+        <img id="rocket" src="./asset/pics/rocket1.gif" alt="rocket">
+        <img id="enemy" src="./asset/pics/enemy.gif" alt="enemy"> 
+        <img id="ship" src="./asset/pics/ship.gif" alt="spaceship">
 </main>
     <!--javascript links -->
     <script src="./js/index.js"></script>

@@ -20,11 +20,12 @@ function checkKey(e) {
     e = e || window.event;
     if (e.keyCode == '38', '40') {
         jump(); // invoke codes above
-        addHit(); // invoke codes located in score.js
+        addJump(); // invoke codes located in score.js
         jumpSound.play(); // invoke jump sound
     }
     // To activate Refresh in index.js line #19
     if (e.keyCode == '32') {
-        refresh() // invoke code located in index.js
+        refresh()   // invoke code located in index.js
+      
     }
 }

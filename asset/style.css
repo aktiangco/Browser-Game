@@ -5,10 +5,13 @@ body {
   justify-content: center;
   padding: 40px;
   margin-top: -20px;
+  display: flexbox;
   
 }
 /* Scoreboard */
-
+main{
+  flex-grow: 1;
+}
 header {
     display: flex;
     padding: 2px;
@@ -18,18 +21,20 @@ header {
     width: 896px;
     height: 70px;
     border: 1px solid white;
+    
 }
-.score, .highScores, .instruction {
+.score, .highScore, .instruction {
     align-items: center;
     flex-grow: 1;
 }
 
-#score {
+#score #highScores {
   width: 100px;
   height: 30px;
   align-items: center;
  
 }
+
 
 /* Play Area, Character & obstacle */
 #game {
@@ -38,6 +43,7 @@ header {
   height: 400px;
   border: 1px solid white;
   overflow: hidden;
+
 }
 #mech {
   width: 50px;
@@ -85,6 +91,10 @@ header {
   transform: rotate(230deg);
   animation: block 6s infinite linear;
 }
+.block-animation {
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
 
 /* Animations for moving to the left */
 @keyframes block{

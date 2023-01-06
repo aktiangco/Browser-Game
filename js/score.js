@@ -4,26 +4,28 @@ let HIGHEST_SCORE = 'Highest Score';
 
 
 const scoreElement = document.querySelector('.scores');
-const addHit = () => {
+const addJump = () => {
     counter++;
-    renderHits();
+    renderJumps(); 
 };
-const renderHits = () => {
-    scoreElement.innerHTML = counter;
+const renderJumps = () => {
+    scoreElement.innerHTML = `${counter}`;
 };
-const resetHits = () => {
+const resetJumps = () => {
     counter = 0;
-    renderHits();
-};
+    renderJumps();
+}; 
 
-// still working on the HighScore feature
+
 // Highest score local storage
 let highScore = localStorage.getItem(HIGHEST_SCORE)
 if (!highScore) {
-    localStorage.setItem(HIGHEST_SCORE, 0);
+    localStorage.setItem(HIGHEST_SCORE, `${counter}`);
 }
 
-let highestScoreLocal = document.querySelector('.highScore');
-highestScoreLocal.textContent = `High Score: ${localStorage.getItem(HIGHEST_SCORE)};`;
+let highestScoreLocal = document.querySelector('#highScores');
+
+highestScoreLocal.textContent = `High Score: "${localStorage.getItem(HIGHEST_SCORE)}"`;
+
 highestScoreLocal.classList.add("high-score");
-game.appendChild(highestScoreLocal);
+highScore.innerHTML = (highestScoreLocal);
