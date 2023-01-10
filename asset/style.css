@@ -1,12 +1,18 @@
+html {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
+}
 body {
   background: black;
   color: white;
   align-items: center;
   justify-content: center;
   padding: 40px;
-  margin-top: -20px;
   display: flexbox;
-  
+  position: relative;
+  width: 90%;
 }
 /* Scoreboard */
 main{
@@ -43,6 +49,7 @@ header {
   height: 400px;
   border: 1px solid white;
   overflow: hidden;
+
 
 }
 #mech {
@@ -91,9 +98,6 @@ header {
   transform: rotate(230deg);
   animation: block 6s infinite linear;
 }
-.block-animation {
-  animation: name duration timing-function delay iteration-count direction fill-mode;
-}
 
 
 /* Animations for moving to the left */
@@ -101,3 +105,39 @@ header {
   0%{left: 900px;}
   100%{left:-400px;}
 }
+
+
+
+/* button div */ 
+#btn {
+  align-content: center;
+  justify-content: center;
+}
+
+#btn-jump, #btn-reset{
+  background-color: #0c764f;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+
+
+
+@media (min-width: 600px) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  header, main, #btn {
+      max-width: 100%;
+      min-width: 50%;
+  }
+
+}          

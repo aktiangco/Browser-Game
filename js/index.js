@@ -2,6 +2,7 @@
 const character = document.getElementById("mech"); 
 const rocket = document.getElementById("rocket");
 const enemy = document.getElementById("enemy");
+const ship = document.getElementById("ship");
 
 //sounds effects
 const music = new Audio('asset/sounds/music.mp3'); 
@@ -33,8 +34,9 @@ let checkHit = setInterval(() => {
             character.style.display = "none";
             rocket.style.display = "none";
             enemy.style.display = "none";
+            ship.style.display = "none";
             scoreElement.style.display = "none"; // hitElement codes in score.js
-            ///////////////////////////
+            
         swal(`You Lost : "${counter}"`, "Try Again?", "error"); // Using sweetAlert vs ugly alert
         hitSound.play();
         
@@ -49,7 +51,3 @@ function refresh() {
 
    
 }
-
-
- 
-      

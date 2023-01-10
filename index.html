@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-<body id="body">
+<body>
     <h1>Mecha Jump</h1>
     <p>Simple Browser Game</p>
     <!--Score, Top-Score & Game instruction -->
@@ -36,9 +36,15 @@
         <img id="enemy" src="./asset/pics/enemy.gif" alt="enemy"> 
         <img id="ship" src="./asset/pics/ship.gif" alt="spaceship">
 </main>
+<div id="btn">
+<button id="btn-reset" onclick="refresh()">Restart</button>
+<button id="btn-jump" onclick="jump()">Jump</button>
+</div>
     <!--javascript links -->
     <script src="./js/index.js"></script>
     <script src="./js/jump.js"></script>
     <script src="./js/score.js"></script>
+    <script src="./js/objects.js"></script>
 </body>
+
 </html>
