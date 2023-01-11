@@ -17,6 +17,7 @@ body {
   display: flexbox;
   position: relative;
   width: 90%;
+  min-width: auto;
 }
 /* Scoreboard */
 main{
@@ -52,9 +53,7 @@ header {
   width: 900px;
   height: 400px;
   border: 1px solid white;
-  /*
   overflow: hidden;
-*/
 
 }
 #mech {
@@ -116,9 +115,10 @@ header {
 /* button div */ 
 #btn {
   align-content: center;
-  justify-content: center;
+  justify-content: baseline;
   display: flex;
   width: 894px;
+  flex: 1 0 500px;
 }
 
 #btn-jump, #btn-reset{
