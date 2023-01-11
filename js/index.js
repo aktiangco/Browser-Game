@@ -1,7 +1,7 @@
 // Grabbing element ID in the HTML
 const character = document.getElementById("mech"); 
-const rocket = document.getElementById("rocket");
-const enemy = document.getElementById("enemy");
+const rocket1 = document.getElementById("rocket");
+const rocket2 = document.getElementById("enemy");
 const ship = document.getElementById("ship");
 
 //sounds effects
@@ -16,9 +16,9 @@ music.play();
 //Collision Detection
 let checkHit = setInterval(() => {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
-    let rocketLeft = parseInt(window.getComputedStyle(rocket).getPropertyValue("left"));
-    let enemyLeft = parseInt(window.getComputedStyle(enemy).getPropertyValue("left"));
-    if ((rocketLeft < 60 && rocketLeft > 0 && characterTop >= 230) || (enemyLeft < 30 && enemyLeft > 0 && characterTop >= 230)) {
+    let rocket1Left = parseInt(window.getComputedStyle(rocket1).getPropertyValue("left"));
+    let rocket2Left = parseInt(window.getComputedStyle(rocket2).getPropertyValue("left"));
+    if ((rocket1Left < 60 && rocket1Left > 0 && characterTop >= 265) || (rocket2Left < 30 && rocket2Left > 0 && characterTop >= 265)) {
         let currentHighScore = localStorage.getItem(HIGHEST_SCORE);
             // Setting high score in local storage
         if (!currentHighScore || currentHighScore < `${counter}`) {
@@ -32,8 +32,8 @@ let checkHit = setInterval(() => {
         // to make objects display disappear 
             // // DRY how to simplify it //
             character.style.display = "none";
-            rocket.style.display = "none";
-            enemy.style.display = "none";
+            rocket1.style.display = "none";
+            rocket2.style.display = "none";
             ship.style.display = "none";
             scoreElement.style.display = "none"; // hitElement codes in score.js
             

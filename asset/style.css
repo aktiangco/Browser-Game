@@ -82,15 +82,15 @@ header {
   width: 80px;
   height: 80px;
   left: 900px;
+  transform: rotate(270deg);
 }
 
 #rocket {
   top: 240px;
-  transform: rotate(270deg);
   animation: block 2s infinite linear;
 }
 #enemy {
-  top: 240px;
+  top: 270px;
   animation: block 3s infinite linear;
 }
 #ship {
