@@ -4,6 +4,10 @@ html {
   align-items: center;
   
 }
+* {
+padding: 0;
+margin: 0;
+}
 body {
   background: black;
   color: white;
@@ -24,8 +28,8 @@ header {
     background: #3e3a3a;
     color: white;
     align-items: center;
-    width: 896px;
-    height: 70px;
+    width: 894px;
+    height: 50px;
     border: 1px solid white;
     
 }
@@ -48,8 +52,9 @@ header {
   width: 900px;
   height: 400px;
   border: 1px solid white;
+  /*
   overflow: hidden;
-
+*/
 
 }
 #mech {
@@ -86,7 +91,7 @@ header {
   animation: block 2s infinite linear;
 }
 #enemy {
-  top: 270px;
+  top: 240px;
   animation: block 3s infinite linear;
 }
 #ship {
@@ -112,6 +117,8 @@ header {
 #btn {
   align-content: center;
   justify-content: center;
+  display: flex;
+  width: 894px;
 }
 
 #btn-jump, #btn-reset{
@@ -124,7 +131,8 @@ header {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  border-radius: 50%;
+  border-radius: 25%;
+  flex: 1;
 }
 
 
