@@ -19,7 +19,7 @@ const resetJumps = () => {
 
 // Highest score local storage
 let highScore = localStorage.getItem(HIGHEST_SCORE)
-if (!highScore) {
+if (!highScore || highScore < `${counter}`) {
     localStorage.setItem(HIGHEST_SCORE, `${counter}`);
 }
 

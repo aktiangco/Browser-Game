@@ -11,7 +11,7 @@ const hitSound = new Audio('asset/sounds/explosion.ogg');
 music.loop = true;
 
 music.volume = 0.5;
-music.play();
+music.play(); // background music
 
 //Collision Detection
 let checkHit = setInterval(() => {
@@ -29,6 +29,8 @@ let checkHit = setInterval(() => {
         // Music pause when game ended
         music.pause();
         music.currentTime = 0;
+        jumpSound.pause();
+        
         // to make objects display disappear 
             // // DRY how to simplify it //
             character.style.display = "none";
@@ -36,9 +38,12 @@ let checkHit = setInterval(() => {
             rocket2.style.display = "none";
             ship.style.display = "none";
             scoreElement.style.display = "none"; // hitElement codes in score.js
-            
+        hitSound.play(); // explosion sound when game is over
+        
         swal(`You Lost : "${counter}"`, "Try Again?", "error"); // Using sweetAlert vs ugly alert
-        hitSound.play();
+        
+        document.querySelector('#btn-jump').disabled = true;
+        
         
     };
 }, 10);

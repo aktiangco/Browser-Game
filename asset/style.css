@@ -106,8 +106,8 @@ header {
 
 /* Animations for moving to the left */
 @keyframes block{
-  0%{left: 900px;}
-  100%{left:-400px;}
+  0%{left: 1000px;}
+  100%{left:-200px;}
 }
 
 
@@ -115,6 +115,7 @@ header {
 /* button div */ 
 #btn {
   align-content: center;
+  
   justify-content: baseline;
   display: flex;
   width: 894px;
